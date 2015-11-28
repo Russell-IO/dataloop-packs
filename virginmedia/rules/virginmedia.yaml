@@ -1,0 +1,17 @@
+title: Production VirginMedia
+criteria:
+  - metric: virginmedia.downstream.1
+    scope:
+      tag: virginmedia
+    condition:
+      timeout: 0
+      threshold: 37
+  - metric: virginmedia.upstream.1
+    scope:
+      tag: virginmedia
+    condition:
+      timeout: 0
+      threshold: 47
+actions:
+  - emails: []
+    message: ''

@@ -1,0 +1,167 @@
+title: VirginMedia
+period: 3600
+positions:
+  - title: Status
+    data_type: nagios
+    type: status
+    color: maroon
+    row: 1
+    col: 1
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: virginmedia.status
+        scope:
+          tag: virginmedia
+  - title: Download (Mb)
+    data_type: number
+    type: number
+    color: navy
+    row: 1
+    col: 2
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: max
+    symbol: arrow-down
+    series:
+      - metric: virginmedia.download
+        scope:
+          tag: zfs
+  - title: Upload (Mb)
+    data_type: number
+    type: number
+    color: olive
+    row: 1
+    col: 3
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: max
+    symbol: arrow-up
+    series:
+      - metric: virginmedia.upload
+        scope:
+          tag: zfs
+  - title: Downstream Channels
+    data_type: number
+    type: number
+    color: blue
+    row: 1
+    col: 4
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: max
+    symbol: arrow-circle-o-down
+    series:
+      - metric: virginmedia.downstream.channels
+        scope:
+          tag: virginmedia
+  - title: Upstream Channels
+    data_type: number
+    type: number
+    color: teal
+    row: 1
+    col: 5
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: max
+    symbol: arrow-circle-o-up
+    series:
+      - metric: virginmedia.upstream.channels
+        scope:
+          tag: virginmedia
+  - title: Average Noise
+    data_type: number
+    type: number
+    color: purple
+    row: 1
+    col: 6
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: avg
+    symbol: bell
+    series:
+      - metric: virginmedia.downstream.average
+        scope:
+          tag: virginmedia
+  - title: Average PowerLevel
+    data_type: number
+    type: number
+    color: maroon
+    row: 1
+    col: 7
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    filter: avg
+    symbol: bolt
+    series:
+      - metric: virginmedia.upstream.average
+        scope:
+          tag: virginmedia
+  - title: Downstream Noise
+    data_type: number
+    type: detailed-chart
+    color: navy
+    row: 2
+    col: 1
+    size_x: 7
+    size_y: 3
+    legend: true
+    icon: true
+    filter: avg
+    series:
+      - metric: virginmedia.downstream.7
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.6
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.8
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.5
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.4
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.3
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.2
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.downstream.1
+        scope:
+          tag: virginmedia
+  - title: Upstream PowerLevels
+    data_type: number
+    type: detailed-chart
+    color: lime
+    row: 5
+    col: 1
+    size_x: 7
+    size_y: 3
+    legend: true
+    icon: true
+    filter: avg
+    series:
+      - metric: virginmedia.upstream.1
+        scope:
+          tag: virginmedia
+      - metric: virginmedia.upstream.4
+        scope:
+          tag: virginmedia

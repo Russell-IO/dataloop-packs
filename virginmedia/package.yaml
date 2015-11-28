@@ -1,0 +1,8 @@
+title: VirginMedia
+author: Russell-IO
+version: 1.0.0
+description: Dashboard monitoring speed, power levels & noise 
+icon:
+    name: virginmedia
+    background: "#C12833"
+    foreground: white
